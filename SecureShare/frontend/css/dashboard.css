@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b1120;
+    color: #e5e7eb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Navbar */
+
+.dashboard-navbar {
+    background: #111c32;
+    border-bottom: 1px solid #25334d;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 23px;
+    color: #60a5fa !important;
+}
+
+.welcome-user {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* Dashboard */
+
+.dashboard-container {
+    padding: 35px;
+}
+
+.dashboard-heading {
+    margin-bottom: 30px;
+}
+
+.dashboard-heading h2 {
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.dashboard-heading p,
+.section-heading p {
+    color: #94a3b8;
+    margin-bottom: 0;
+}
+
+/* Statistics */
+
+.stat-card {
+    background: #14213a;
+    border: 1px solid #253652;
+    border-radius: 12px;
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    border-color: #3b82f6;
+}
+
+.stat-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    background: #1e3a5f;
+    color: #60a5fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.stat-card p {
+    color: #94a3b8;
+    margin-bottom: 5px;
+}
+
+.stat-card h3 {
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Content Cards */
+
+.content-card {
+    background: #14213a;
+    border: 1px solid #253652;
+    border-radius: 13px;
+    padding: 25px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.section-heading h4 {
+    font-weight: 650;
+    margin-bottom: 6px;
+}
+
+.section-icon {
+    color: #60a5fa;
+    font-size: 30px;
+}
+
+/* Upload */
+
+.upload-area {
+    border: 2px dashed #3b5273;
+    background: #101b30;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+.upload-area > i {
+    font-size: 42px;
+    color: #60a5fa;
+}
+
+.upload-area h5 {
+    margin-top: 12px;
+}
+
+.upload-area p {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.upload-area input {
+    max-width: 450px;
+    margin: 15px auto 0;
+    background: #1e293b;
+    border-color: #3b5273;
+    color: white;
+}
+
+.primary-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 7px;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+    color: white;
+}
+
+.refresh-btn {
+    background: #1e3a5f;
+    color: #93c5fd;
+}
+
+.refresh-btn:hover {
+    background: #254b78;
+    color: white;
+}
+
+/* Table */
+
+.table {
+    color: #e2e8f0;
+    margin-bottom: 0;
+}
+
+.table thead th {
+    color: #93c5fd;
+    background: #101b30;
+    border-bottom: 1px solid #334155;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.table tbody td {
+    background: #14213a;
+    border-color: #293b56;
+    padding: 15px;
+}
+
+.table tbody tr:hover td {
+    background: #192b48;
+}
+
+.file-name {
+    font-weight: 600;
+}
+
+.file-icon {
+    color: #60a5fa;
+    margin-right: 8px;
+    font-size: 19px;
+}
+
+.encrypted-badge {
+    color: #86efac;
+    background: #14532d;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.action-btn {
+    border: none;
+    padding: 7px 10px;
+    border-radius: 6px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.download-btn {
+    background: #1e40af;
+    color: white;
+}
+
+.delete-btn {
+    background: #7f1d1d;
+    color: white;
+}
+
+.empty-icon {
+    font-size: 45px;
+    color: #64748b;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#emptyMessage p {
+    color: #94a3b8;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .dashboard-container {
+        padding: 20px 14px;
+    }
+
+    .content-card {
+        padding: 18px;
+    }
+
+    .welcome-user {
+        display: none;
+    }
+
+}

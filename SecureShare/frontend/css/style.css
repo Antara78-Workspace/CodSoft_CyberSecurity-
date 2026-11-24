@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-dark: #08111f;
+    --bg-card: #101e31;
+    --primary: #3985ff;
+    --text-light: #f5f7fb;
+    --text-muted: #9aa9bd;
+    --border: rgba(255, 255, 255, 0.09);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    padding: 20px 0;
+    background: #08111f;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.navbar-brand i {
+    color: var(--primary);
+    margin-right: 7px;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background: #236bdc;
+    border-color: #236bdc;
+}
+
+
+/* HERO */
+
+.hero-section {
+    padding: 100px 0;
+    background:
+        radial-gradient(circle at 80% 30%, #15335a 0%, transparent 35%),
+        var(--bg-dark);
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 10px 16px;
+    color: #72aaff;
+    background: rgba(57, 133, 255, 0.12);
+    border: 1px solid rgba(57, 133, 255, 0.25);
+    border-radius: 30px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 {
+    font-size: clamp(42px, 5vw, 65px);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    color: var(--primary);
+}
+
+.hero-content p {
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 530px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.security-info {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.security-info i {
+    color: #50a0ff;
+    margin-right: 6px;
+}
+
+
+/* HERO VISUAL */
+
+.hero-visual {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.security-card {
+    width: 340px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: linear-gradient(145deg, #14263d, #0d192b);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+    animation: float 4s ease-in-out infinite;
+}
+
+.security-card-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    background: rgba(57, 133, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60a5ff;
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+.security-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.security-card p {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin: 12px 0 25px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.file-item i:first-child {
+    color: #65a5ff;
+    font-size: 20px;
+}
+
+.file-item .bi-check-circle-fill {
+    color: #35d39a;
+}
+
+.encrypted-label {
+    margin-top: 20px;
+    color: #4ce0ad;
+    font-size: 13px;
+}
+
+.floating-icon {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: #17375c;
+    border: 1px solid rgba(57, 133, 255, 0.3);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #69adff;
+}
+
+.icon-one {
+    top: 15px;
+    right: 35px;
+}
+
+.icon-two {
+    bottom: 25px;
+    left: 30px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+/* FEATURES */
+
+.features-section,
+.how-section {
+    padding: 85px 0;
+}
+
+.features-section {
+    background: #0b1727;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading span {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: var(--text-muted);
+}
+
+.feature-card {
+    height: 100%;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--bg-card);
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+}
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    background: rgba(57, 133, 255, 0.13);
+    color: #60a5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+.feature-card h4 {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 12px;
+}
+
+
+/* HOW IT WORKS */
+
+.step-card {
+    text-align: center;
+    padding: 30px;
+}
+
+.step-number {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.step-card h4 {
+    font-weight: 700;
+}
+
+.step-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 55px 0 25px;
+    background: #060d17;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.footer h4 {
+    font-weight: 800;
+}
+
+.footer h4 i {
+    color: var(--primary);
+}
+
+.footer p {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.footer-line {
+    height: 1px;
+    background: var(--border);
+    margin: 30px 0 20px;
+}
+
+.copyright {
+    font-size: 12px !important;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 65px 0;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin: auto;
+    }
+
+    .hero-buttons,
+    .security-info {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        margin-top: 55px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+}
